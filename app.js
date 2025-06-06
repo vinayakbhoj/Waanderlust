@@ -75,9 +75,9 @@ const sessionOptions = {
     },
 };
 
-// app.get("/", (req, res) => {
-//     res.send("Home Page");
-// })
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+})
 
 
 
