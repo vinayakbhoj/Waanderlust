@@ -1,4 +1,19 @@
 <style>
+  /* Prevent body scroll when nav is open */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* Optional: ensure navbar is on top */
+.navbar-collapse {
+  z-index: 1050;
+  background-color: white;
+  position: absolute;
+  top: 60px; /* adjust based on navbar height */
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
   .search-btn {
     background-color: #fe424d;
     color: white;
@@ -19,6 +34,13 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
+  }
+  @media screen and (max-width: 600px) {
+    .nav-link {
+      margin-top: 1rem;
+      
+    }
+    
   }
 </style>
 

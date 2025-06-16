@@ -15,7 +15,12 @@ body {
     height: 5rem;
     background-color: white;
 }
-
+@media screen and (max-width: 600px) {
+    body{
+        background-color: green;
+    }
+    
+}
 .fa-compass {
     color: #fe424f;
     font-size: 2.5rem;
@@ -131,3 +136,5 @@ body {
     width: 100vh; 
     
 }
+
+
